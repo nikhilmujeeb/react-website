@@ -1,4 +1,4 @@
-//Write a function calculateFactorial (n) that takes a non-negative integer n and returns the factorial of n.(factorial of 5= 5*4*3*2*1=120)
+//1.
 
 function calcfact(n){
     if(n<0){
@@ -17,14 +17,11 @@ function calcfact(n){
             
     }
 }
-
-
 calcfact(6)
 
 
 
-//Write a function isPrime(num) that takes a positive integer num and returns true if the number is prime, and false otherwise  
-
+//2.
 
 function Prime(num)
 {
@@ -56,13 +53,12 @@ function Prime(num)
         console.log("it is not a Positive integer");
     }
     
-    
 }
 
 let i
 console.log( Prime(7));
 
-//Write a function sumEvenNumbers(start, end) that takes two integers start and end, and returns the sum of all even numbers in the inclusive range from start to end.
+//3
 
 function sumEvenNumbers(start, end)
         {
@@ -81,7 +77,7 @@ function sumEvenNumbers(start, end)
 let sum=0
 sumEvenNumbers(2, 10)
 
-//Write a JavaScript program to remove items(clicking on a button) from a drop-down list.
+//4
 
 function removeSelectedItem(){
     const selectcolor=document.getElementById('colorSelect')
@@ -92,7 +88,27 @@ function removeSelectedItem(){
     }
 }
 
-//Write a JavaScript program to change the  color given text in p tag  
+//5
+
+function changeTextColor() {
+    const selectElement = document.getElementById('colorSelect2');
+    const color = selectElement.value;
+    const sampleText = document.getElementById('sampleText');
+    sampleText.style.color = color;
+}
+
+//6
+
+function removeitem(){
+    const selectcolor=document.getElementById('colorSelect')
+    const selectedIndex=selectcolor.selectedIndex
+
+    if(selectedIndex!==-1){
+        selectcolor.remove(selectedIndex)
+    }
+}
+
+//7
 
 function changeTextColor() {
     const selectElement = document.getElementById('colorSelect2');

@@ -39,12 +39,12 @@ else
 
 //checks if no is positive,negative or zero
 
-let n=34
-if(n>0)
+let number=34
+if(number>0)
 {
     console.log("the no is positive");
 }
-else if(n<0)
+else if(number<0)
 {
     console.log("the no is negative");
 }
