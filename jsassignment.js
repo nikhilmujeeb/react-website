@@ -14,9 +14,8 @@ console.log("area=" +area);
 
 //eligible for vote
 
-let age
-age=window.prompt("enter age")
-if(afe>+18)
+let age=21
+if(age>=18)
 {
     console.log("eligible for vote");
 }
@@ -59,16 +58,16 @@ let n=21;
 switch(true)
 {
     case n<13:
-        console.log("use is a child");
+        console.log("user is a child");
         break;
     case n<20:
-        console.log("use is a teenager");
+        console.log("user is a teenager");
         break;
     case n<60:
-        console.log("use is a adult");
+        console.log("user is a adult");
         break;
     default:
-        console.log("use is a senior");                    
+        console.log("user is a senior");                    
 }
 
 //square of each no in array
