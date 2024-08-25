@@ -1,0 +1,302 @@
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #00a087;
+}
+
+/* Navigation Styles */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: relative;
+}
+
+nav a {
+    font-size: large;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(3, 83, 0);
+}
+
+/* Hero Section Styles */
+#hero {
+    background:rgb(34, 34, 34) no-repeat;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+#hero h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+#hero .btn-primary {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#hero .btn-primary:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    transform: scale(1.05);
+}
+
+/* Social Media Links Styling */
+.social-links {
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: #fff; /* Default text color */
+    font-size: 2rem; /* Icon size */
+    margin: 0 1rem; /* Spacing between icons */
+    display: inline-block;
+    width: 50px; /* Icon size */
+    height: 50px; /* Icon size */
+    line-height: 50px; /* Centering icon vertically */
+    border-radius: 50%; /* Circular background */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color for circles */
+    text-align: center; /* Center icon horizontally */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #fff; /* Background color on hover */
+    color: #000; /* Icon color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.social-links .fa-github {
+    background: #333; /* GitHub background color */
+}
+
+.social-links .fa-linkedin {
+    background: #0077b5; /* LinkedIn background color */
+}
+
+.social-links .fa-instagram {
+    background: #e4405f; /* Instagram background color */
+}
+
+/* About Me Section Styles */
+#about {
+    padding: 5rem 0;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#about img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#about h2 {
+    margin-bottom: 1.5rem;
+}
+
+#about .btn-primary {
+    margin-right: 1rem;
+}
+
+/* Services Section Styles */
+#services {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    margin-bottom: 1rem;
+}
+
+.card-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: none;
+}
+
+/* Portfolio Section Styles */
+#portfolio {
+    padding: 5rem 0;
+}
+
+#portfolio .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.portfolio-item {
+    margin-bottom: 2rem;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 5rem 0;
+}
+
+#contact .form-control {
+    border-radius: 8px;
+}
+
+#contact .btn-primary {
+    border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero h3 {
+        font-size: 1.5rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .social-links {
+        bottom: 10px;
+    }
+
+    header {
+        padding: 20px 15px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffffff; /* Background color of the button */
+    color: #000000; /* Text color */
+    border: gray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; /* Font size for the icon */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+    text-decoration: none; /* Remove underline */
+}
+
+.back-to-top:hover {
+    background: #009473; /* Darker background color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.back-to-top i {
+    margin: 0;
+}
+
+/* Show button only when scrolled down */
+#backToTop {
+    display: none;
+}
+
+/* Show button when scrolled down */
+#backToTop.show {
+    display: flex;
+}
