@@ -63,6 +63,7 @@ header{
     font-weight: 900;
     cursor: pointer;
     transition: 0.5s ease;
+    text-decoration: none;
 }
 
 .logo:hover{
@@ -81,6 +82,7 @@ nav a{
 nav a:hover{
     color: #ff0000;
     border-bottom: 3px solid #ff0000;
+    transition: 0.5s ease;
 }
 
 @media(max-width:995px){
@@ -107,6 +109,7 @@ nav a:hover{
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #b74b4b;
         transform: scale(1.2);
+        transition: 0.5s ease;
     }
 }
 
@@ -151,20 +154,16 @@ span{
 
 .home-img{
     border-radius: 50%;
+    border: 5.5px solid #b74b4b;
+    transition: transform 0.3s ease-in-out;
 }
 
 .home-img img{
     position: relative;
-    width: 32vw;
+    width: 40vw;
     border-radius: 50%;
-    box-shadow: 0 0 25px solid #b74b4b;
     cursor: pointer;
     transition: 0.2s linear;
-}
-
-.home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
 }
 
 .social-icons a{
@@ -180,6 +179,7 @@ span{
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
     color: #b74b4b;
+    text-decoration: none;
 }
 
 .social-icons a:hover{
@@ -302,6 +302,7 @@ span{
     border-radius: 8px;
     border-color: red;
     border-width: 10px;
+    border: 5px solid #b74b4b;
 }
 
 #about h2 {
