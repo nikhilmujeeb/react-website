@@ -34,24 +34,3 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         document.getElementById('contactForm').reset();
     }
 });
-
-// JavaScript to handle the back-to-top button
-document.addEventListener('DOMContentLoaded', function() {
-    const backToTopButton = document.getElementById('backToTop');
-
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 300) { // Show button after scrolling down 300px
-            backToTopButton.classList.add('show');
-        } else {
-            backToTopButton.classList.remove('show');
-        }
-    });
-
-    backToTopButton.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default anchor click behavior
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // Smooth scroll to top
-        });
-    });
-});

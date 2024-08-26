@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
     <header class="header">
       <a href="#" class="logo">Nikhil</a>
     <nav>
-          <a href="#intro" class="active">Home</a>
+          <a href="#intro">Home</a>
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#portfolio">Portfolio</a>
@@ -54,9 +55,7 @@
               <img src="414468322_205210799325070_4514649613247050876_n.jpg" alt="Your Picture" style="width: 100%; height: auto; aspect-ratio: 1 / 1.5; object-fit: cover;">
             </div>
             <div class="col-md-8">
-              <div class="headings">
-                <h1>About Me</h1>
-              </div>
+                <h2>About Me</h2>
               <p>Highly motivated web developer with a B.Tech in Computer Science and Engineering seeking to leverage my skills in web development and problem-solving for innovative projects. My diverse background includes strong foundations in web design, SQL, Microsoft technologies, C++, and HTML, alongside proficiency in modern web development tools like HTML, CSS, JavaScript, React, and Node.js. Adept at version control with Git and utilizing Agile methodologies for efficient project management. I'm a quick learner who thrives in fast-paced environments and enjoys collaborating with cross-functional teams. Committed to continuous learning, I stay up-to-date on the latest technologies in the field, including experience building scalable web applications using AWS cloud infrastructure.</p>
               <a href="#portfolio" class="btn btn-primary">My Works</a> <a href="Resume Nikhil V Mujeeb.pdf" class="btn btn-primary">My Resume</a> </div>
           </div>
@@ -66,7 +65,7 @@
           <!-- My Services -->
       <section id="services" class="py-5">
         <div class="container">
-          <div class="headings">
+          <div>
             <h2>My Services</h2>
           </div>
           <div class="row mt-5">
@@ -116,11 +115,9 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-5">
         <div class="container">
-          <div class="headings">
             <h2>My Portfolio</h2>
-          </div>
             <div class="row mt-5 center-container">
-                <div class="col-md-4 portfolio-item web">
+                <div class="col-md-4">
                     <a href="file:///C:/Users/NIKHIL/OneDrive/Documents/PROJECT/newyorktime.html" target="_blank" class="card-link">
                         <div class="card">
                             <img src="Screenshot 2024-08-25 214841.png" class="card-img-top" alt="Project 1">
@@ -133,7 +130,7 @@
                     </a>
                 </div>
                 
-                <div class="col-md-4 portfolio-item web">
+                <div class="col-md-4">
                     <a href="file:///C:/Users/NIKHIL/OneDrive/Documents/java/rental_site.html" target="_blank" class="card-link">
                         <div class="card">
                             <img src="Screenshot 2024-08-25 214734.png" class="card-img-top" alt="Project 2">
@@ -154,12 +151,10 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5 contact-section">
         <div class="container">
-          <div class="headings">
               <h2>Contact Me</h2>
-            </div>
             <div class="d-flex justify-content-between align-items-start">
               <div class="w-50">
-                <p>I'd love to hear from you! Please fill out the form below to get in touch.</p>
+                <p style="color: aliceblue;">I'd love to hear from you! Please fill out the form below to get in touch.</p>
               </div>
             <div class="w-50">
               <form id="contactForm">
@@ -181,7 +176,10 @@
             </div>
             </div>
         </div>
-    </section>
+      </section>
+      <a href="#top" id="scrollToTopBtn" title="Go to top" class="fa-solid fa-arrow-up"></a>
+    </a>
+      
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="portfolio\script.js"></script>
