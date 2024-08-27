@@ -154,8 +154,6 @@ span{
 
 .home-img{
     border-radius: 50%;
-    border: 5.5px solid #b74b4b;
-    transition: transform 0.3s ease-in-out;
 }
 
 .home-img img{
@@ -300,9 +298,7 @@ span{
     width: 100%;
     height: auto;
     border-radius: 8px;
-    border-color: red;
-    border-width: 10px;
-    border: 5px solid #b74b4b;
+
 }
 
 #about h2 {
@@ -440,3 +436,9 @@ span{
 #scrollToTopBtn:hover {
     background-color: #ff0000; /* Darker shade on hover */
 }
+
+@media (max-width: 768px) {
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+ }
