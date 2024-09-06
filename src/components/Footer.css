@@ -1,0 +1,48 @@
+/* Ensure the body and html take up full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout container to push footer to the bottom */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Main content should take up available space */
+.main-content {
+    flex: 1;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #0095ff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #00c6ff;
+}
+
+.footer-link {
+    margin: 0 10px;
+}
+
+.container p {
+    margin: 10px 0;
+}
