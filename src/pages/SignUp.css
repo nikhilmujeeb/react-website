@@ -1,4 +1,3 @@
-/* Basic reset and ensure full height */
 html, body {
     height: 100%;
     margin: 0;
@@ -7,30 +6,27 @@ html, body {
     box-sizing: border-box;
 }
 
-/* Main layout container */
 .app-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh; 
 }
 
-/* Ensure main content takes up available space */
 .main-content {
     flex: 1;
 }
 
-/* SignUp container styles */
 .signup-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Limit width for better readability */
-    margin: 0 auto; /* Center align */
+    max-width: 400px; 
+    margin: 0 auto; 
 }
 
 .signup-title {
@@ -71,12 +67,11 @@ html, body {
     color: #28a745;
 }
 
-/* Footer styles */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: white;
-    margin-bottom: auto; /* Push footer to bottom */
+    margin-bottom: auto;
     width: 100%;
 }

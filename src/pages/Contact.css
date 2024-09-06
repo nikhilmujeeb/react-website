@@ -2,14 +2,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff; /* Light blue background for the entire page */
+    background-color: #f0f8ff; 
 }
 
 .contact-container {
     padding: 40px;
     max-width: 600px;
     margin: 50px auto;
-    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

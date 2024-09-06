@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Blog.css"; // Assuming you have a CSS file for styling
+import "./Blog.css";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([
