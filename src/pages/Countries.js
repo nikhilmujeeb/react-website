@@ -25,13 +25,15 @@ const Countries = () => {
 
     const fetchPrices = async () => {
       try {
-        const response = await fetch("/countryPrices.json");
+        const response = await fetch(`${window.location.origin}/countryPrices.json`);
         if (!response.ok) {
-          throw new Error("Failed to load prices");
+          throw new Error(`Failed to load prices: ${response.statusText}`);
         }
         const data = await response.json();
+        console.log("Fetched Prices:", data);
         setPrices(data);
       } catch (error) {
+        console.error('Error fetching prices:', error.message);
         setError(error.message);
       }
     };
